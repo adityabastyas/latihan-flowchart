@@ -26,7 +26,7 @@ process.stdin.once("data", function (dataTemp) {
     process.stdin.once("data", function (dataTarget) {
       converTo = dataTarget.toString().trim();
 
-      // ===== CELCIUS =====
+    
       if (tempSource === "celcius") {
         if (converTo === "fahrenheit") {
           console.log("Hasil:", temp * (9 / 5) + 32);
@@ -37,7 +37,7 @@ process.stdin.once("data", function (dataTemp) {
         }
       }
 
-      // ===== FAHRENHEIT =====
+     
       else if (tempSource === "fahrenheit") {
         if (converTo === "celcius") {
           console.log("Hasil:", (temp - 32) * (5 / 9));
@@ -48,7 +48,7 @@ process.stdin.once("data", function (dataTemp) {
         }
       }
 
-      // ===== KELVIN =====
+    
       else if (tempSource === "kelvin") {
         if (converTo === "celcius") {
           console.log("Hasil:", temp - 273.15);
@@ -58,8 +58,7 @@ process.stdin.once("data", function (dataTemp) {
           console.log("Hasil:", (4 / 5) * (temp - 273.15));
         }
       }
-
-      // ===== REAMUR =====
+        
       else if (tempSource === "reamur") {
         if (converTo === "celcius") {
           console.log("Hasil:", (5 / 4) * temp);
@@ -74,3 +73,4 @@ process.stdin.once("data", function (dataTemp) {
     });
   });
 });
+
