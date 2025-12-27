@@ -10,7 +10,6 @@ process.stdin.once("data", function (dataTemp) {
 
   if (isNaN(inputTemp)) {
     console.log('temp "harus angka"');
-    process.exit();
   }
 
   temp = Number(inputTemp);
@@ -73,4 +72,5 @@ process.stdin.once("data", function (dataTemp) {
     });
   });
 });
+
 
