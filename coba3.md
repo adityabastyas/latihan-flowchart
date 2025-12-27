@@ -74,7 +74,7 @@ flowchart
 
   isCelcius --True--> targetFahrenheit
   targetFahrenheit --True--> processF --> outputF --> stop
-  targetFahrenheit --False--> cToK
+  targetFahrenheit --False--> cToK -------> stop
   cToK --True--> proccesCtoK --> outputCtoK --> stop
   cToK --False--> cToR
   cToR --True--> proccesCtoR --> outputCtoR --> stop
@@ -106,3 +106,4 @@ flowchart
   tempR --False--> stop
 
 ```
+
